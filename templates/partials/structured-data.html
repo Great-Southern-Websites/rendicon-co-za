@@ -1,35 +1,29 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
-<!-- Structured data for search engines (schema.org). BUILDER: fill every field
-     from the business's own details; delete keys you have no real value for.
-     Keep it accurate when contact details, hours or locations change. -->
+<!-- Structured data for search engines (schema.org). Keep it accurate when
+     contact details change. -->
 <script type="application/ld+json">
 {|{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "@id": "|}{=site.url.absolute}{|#business",
   "name": "Rendicon",
   "url": "|}{=site.url.absolute}{|",
   "logo": "|}{=site.url('images/logo.png').absolute}{|",
-  "image": "|}{=site.url('images/logo.png').absolute}{|",
-  "description": "BUILDER: one sentence, the same as the home page description.",
-  "telephone": "+61 3 0000 0000",
-  "email": "hello@example.com",
+  "image": "|}{=site.url('images/rendicon-cooker-installed.jpg').absolute}{|",
+  "description": "Rendicon designs, manufactures and installs rendering plant equipment and odour control systems, from cookers to biological filters, from Mokopane.",
+  "telephone": "+27 82 440 6860",
+  "faxNumber": "01866 534 310",
+  "email": "info@rendicon.co.za",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1 Example Street",
-    "addressLocality": "Suburb",
-    "addressRegion": "VIC",
-    "postalCode": "3000",
-    "addressCountry": "AU"
+    "streetAddress": "Postnet Suite 8",
+    "postOfficeBoxNumber": "Private Bag X2449",
+    "addressLocality": "Mokopane",
+    "addressRegion": "Limpopo",
+    "postalCode": "0600",
+    "addressCountry": "ZA"
   },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
-  ],
-  "sameAs": [],
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book",
-    "target": "|}{=site.url('contact').absolute}{|"
-  }
+  "areaServed": "South Africa",
+  "knowsAbout": ["Rendering plant equipment", "Cookers", "Rotary screens", "Stainless steel condensers", "Biological filter systems", "Odour control", "Driers", "Feather presses"]
 }|}
 </script>
